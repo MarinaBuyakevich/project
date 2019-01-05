@@ -1,21 +1,223 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<div class="form">
+  <button  class="button_az">
+    <img src="../assets/img/10.png" alt="">
+  </button>
+  <button class="button_az">
+    <img src="../assets/img/11.png" alt="">
+  </button>
+  <button class="button_az">
+    <img src="../assets/img/12.png" alt="">
+  </button>
+  <table border="1">
+    <tr>
+      <td>
+        <input type="button" class="button-grey" value="&#709;" (click)="button_1 = !button_1">
+        <strong>Appeance</strong><br>
+        <div *ngIf="button_1">
+          <div [style.visibility]="button_1 ? 'visible' : 'hidden'">
+            <p>Grid Lines</p>
+          </div>
+          <div [style.visibility]="button_1 ? 'visible' : 'hidden'" class="text_1">
+            <p><input type="button" class="button-grey" value="&#709;" (click)="button_2 = !button_2">
+              Font</p>
+            <div *ngIf="button_2" class="text_2">
+              <p>&emsp;Name</p>
+              <p>&emsp;Size</p>
+              <p>&emsp;Unit</p>
+              <p>&emsp;Bold</p>
+              <p>&emsp;GdiChartSet</p>
+              <p>&emsp;GdiVerticalFont</p>
+              <p>&emsp;Italic</p>
+              <p>&emsp;Strikeout</p>
+              <p>&emsp;Underline</p>
+            </div>
+            <div class="text-font">
+              <p>Text Color</p>
+              <p>Background Color</p>
+            </div>
+            <p><input type="button" class="button-grey" value="&#709;" (click)="button_3 = !button_3">
+              Header Font</p>
+            <div *ngIf="button_3" class="text_2">
+              <p>&emsp;Name</p>
+              <p>&emsp;Size</p>
+              <p>&emsp;Unit</p>
+              <p>&emsp;Bold</p>
+              <p>&emsp;GdiChartSet</p>
+              <p>&emsp;GdiVerticalFont</p>
+              <p>&emsp;Italic</p>
+              <p>&emsp;Strikeout</p>
+              <p>&emsp;Underline</p>
+            </div>
+            <div class="text-font">
+              <p>Header Text Color</p>
+              <p>Header Background Color</p>
+              <p>Header Frame Color</p>
+              <p>Fade Color</p>
+            </div>
+          </div>
+        </div>
+        <input type="button" class="button-grey" value="&#709;" (click)="button_4 = !button_4">
+        <strong>Behavior</strong><br>
+        <div *ngIf="button_4">
+          <div [style.visibility]="button_4 ? 'visible' : 'hidden'">
+            <p>Update Interval</p>
+            <p>Fade</p>
+            <p>Show New Symbol in Chart</p>
+            <p>Play Alert Sound</p>
+            <p>Truncate Tail</p>
+          </div>
+        </div>
+        <input type="button" class="button-grey" value="&#709;" (click)="button_5 = !button_5">
+        <strong>Columns</strong><br>
+        <div *ngIf="button_5">
+          <div [style.visibility]="button_5 ? 'visible' : 'hidden'">
+            <p>Time</p>
+            <p>Filter Name</p>
+            <p>Symbol</p>
+            <p>Numder Of Singnals</p>
+            <p>Exp 1</p>
+            <p>Exp 1 Format</p>
+            <p>Exp 2</p>
+            <p>Exp 2 Format</p>
+            <p>Exp 3</p>
+            <p>Exp 3 Format</p>
+            <p>Exp 4</p>
+            <p>Exp 4 Format</p>
+            <p>Exp 5</p>
+            <p>Exp 5 Format</p>
+            <p>Exp 6</p>
+            <p>Exp 6 Format</p>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div *ngIf="button_1" class="Div_1">
+          <p>
+            <select name="select">
+              <option>
+                Hide
+              </option>1
+              <option>
+                Show
+              </option>
+            </select>
+          </p>
+          <div *ngIf="button_1" class="Div_2">
+            Microsoft  Sans Serif, 8.25 pt<br>
+          </div>
+          <div *ngIf="button_2" class="Div_2">
+            <button class="button-little">ab</button>Microsoft  Sans Serif<br>
+            8.25<br>
+            Point<br>
+            False<br>
+            1<br>
+            False<br>
+            False<br>
+            False<br>
+            False<br>
+          </div>
+          <div *ngIf="button_1" class="Div_2">
+            <input class="color" type="color" name="bg" value="#FFFFFF">White<br>
+            <input class="color" type="color" name="bg" value="#000000">Black<br>
+            Microsoft  Sans Serif, 8.25 pt<br>
+          </div>
+          <div *ngIf="button_3" class="Div_2">
+            <button class="button-little">ab</button>Microsoft  Sans Serif<br>
+            8.25<br>
+            Point<br>
+            False<br>
+            1<br>
+            False<br>
+            False<br>
+            False<br>
+            False<br>
+          </div>
+          <div *ngIf="button_1" class="Div_2">
+            <input class="color" type="color" name="bg" value="#000000">Black<br>
+            <input class="color" type="color" name="bg" value="#FFFFFF">White<br>
+            <input class="color" type="color" name="bg" value="#000000">Black<br>
+            <input class="color" type="color" name="bg" value="#FFFFFF">Auto<br>
+          </div>
+        </div>
+        <div *ngIf="button_4" class="Div_4">
+          1<br>
+          30 second<br>
+          Yes<br>
+          None<br>
+          Yes<br>
+        </div>
+        <div *ngIf="button_5" class="Div_5">
+          Hide<br>
+          Hide<br>
+          Show<br>
+          Hide<br>
+          Hide<br>
+          TwoDecimals<br>
+          Hide<br>
+          TwoDecimals<br>
+          Hide<br>
+          TwoDecimals<br>
+          Hide<br>
+          TwoDecimals<br>
+          Hide<br>
+          TwoDecimals<br>
+          Hide<br>
+          TwoDecimals<br>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
 
-<router-outlet></router-outlet>
+      </td>
+      <td>
+
+      </td>
+      <!--</tr>-->
+      <!--<tr>-->
+      <!--<td>-->
+      <!--<input type="button" class="button-grey" value="&#709;" (click)="button_6 = !button_6">-->
+      <!--Columns Color-->
+      <!--<div [style.visibility]="button_6 ? 'visible' : 'hidden'" class="text_1">-->
+      <!--<p>Time Color</p>-->
+      <!--<p>Symbol Color</p>-->
+      <!--<p>Filter Name Color</p>-->
+      <!--<p>Number Of Signals Color</p>-->
+      <!--<p>Value 1 Color</p>-->
+      <!--<p>Value 1 Color</p>-->
+      <!--<p>Value 1 Color</p>-->
+      <!--<p>Value 1 Color</p>-->
+      <!--<p>Value 1 Color</p>-->
+      <!--<p>Value 1 Color</p>-->
+      <!--</div>-->
+      <!--</td>-->
+      <!--<td>-->
+      <!--<div [style.visibility]="button_6 ? 'visible' : 'hidden'" class="Div_3">-->
+      <!--<input class="color" type="color" name="bg" value="#FFFFFF"><br>-->
+      <!--<input class="color" type="color" name="bg" value="#FFFFFF"><br>-->
+      <!--<input class="color" type="color" name="bg" value="#FFFFFF"><br>-->
+      <!--<input class="color" type="color" name="bg" value="#FFFFFF"><br>-->
+      <!--<input class="color" type="color" name="bg" value="#FFFFFF"><br>-->
+      <!--<input class="color" type="color" name="bg" value="#FFFFFF"><br>-->
+      <!--<input class="color" type="color" name="bg" value="#FFFFFF"><br>-->
+      <!--<input class="color" type="color" name="bg" value="#FFFFFF"><br>-->
+      <!--<input class="color" type="color" name="bg" value="#FFFFFF"><br>-->
+      <!--<input class="color" type="color" name="bg" value="#FFFFFF"><br>-->
+      <!--</div>-->
+      <!--</td>-->
+  </table>
+  <div class="button-div">
+    <button class="button">
+      Cancel
+    </button>
+    <button class="button">
+      Set As Default
+    </button>
+    <button class="button">
+      Default
+    </button>
+    <button class="button">
+      Ok
+    </button>
+  </div>
+</div>

@@ -1,0 +1,119 @@
+.form{
+  width: 450px;
+  height: 450px;
+}
+
+.button_az{
+  display: inline-block;
+  margin: 3px;
+  background-color: rgba(242, 242, 242, 0.27);
+  padding: 2px 1px 0 2px;
+}
+
+table{
+  border: 1px solid #b0b0b0;
+  width: 500px;
+}
+
+tr{
+  width: 50%;
+}
+
+td{
+  vertical-align: top;
+  background-color: rgba(242, 242, 242, 0.27);
+  width: 250px;
+  height: 100px;
+}
+
+p {
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
+  margin-left: 30px;
+}
+
+.text_1{
+  margin:0 0 0 -30px;
+  width: 90%;
+}
+
+.text_2{
+  margin: 0 0 0 30px;
+  width: 90%;
+}
+
+
+.text-font{
+  margin: 0 0 0 30px;
+  width: 100%;
+}
+
+.Div_1{
+  /*margin-left: 30px;*/
+  width: 90%;
+  padding: 20px 0 0 0;
+  line-height: 1.6;
+}
+
+.Div_2{
+  margin:0 0 0 30px;
+  width: 90%;
+  line-height: 1.5;
+}
+
+.Div_3{
+  margin:0 0 0 30px;
+  width: 90%;
+  line-height: 1.66;
+  padding: 20px 0 0 0;
+}
+
+.Div_4 {
+  width: 90%;
+  line-height: 1.6;
+  margin-left: 30px;
+  margin-top: 25px;
+}
+
+.Div_5{
+  margin:0 0 0 30px;
+  width: 90%;
+  line-height: 1.57;
+  padding: 20px 0 0 0;
+}
+
+.color{
+  width: 20px;
+  height: 20px;
+  margin: 0 7px 0 0 ;
+}
+
+select{
+  width: 100%;
+  background-color: rgba(242, 242, 242, 0.27);
+  border: initial;
+}
+
+
+.button-grey{
+  width: 25px;
+  height: 20px;
+  background-color: rgba(176, 176, 176, 0.27);
+}
+
+.button-div{
+  width: 600px;
+  height: 55px;
+}
+
+.button{
+  display: inline;
+  width: auto;
+  margin: 10px 83px 0 0;
+}
+
+.button-little{
+  width: 28px;
+  height: 20px;
+  background-color: grey;
+}
