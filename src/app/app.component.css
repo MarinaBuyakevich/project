@@ -1,6 +1,6 @@
 .form{
   width: 450px;
-  height: 450px;
+  height: 460px;
 }
 
 .button_az{
@@ -10,20 +10,48 @@
   padding: 2px 1px 0 2px;
 }
 
-table{
+/*.bord{*/
+  /*position: relative;*/
+  /*border-left: 24px solid rgba(173, 216, 230, 0.38);*/
+  /*!*border-top: 30px solid rgba(173, 216, 230, 0.38);*!*/
+  /*height: 400px;*/
+  /*!*width: 96%;*!*/
+/*}*/
+
+.table{
   border: 1px solid #b0b0b0;
-  width: 500px;
-}
-
-tr{
-  width: 50%;
-}
-
-td{
   vertical-align: top;
-  background-color: rgba(242, 242, 242, 0.27);
-  width: 250px;
-  height: 100px;
+  background-color: rgba(255, 255, 255, 0.27);
+  width: 500px;
+  height: 417px;
+  overflow: scroll;
+}
+
+.block{
+  width: 95%;
+  display: inline-block;
+  /*position: relative;*/
+  /*top: -400px;*/
+  /*border-top: 30px solid rgba(173, 216, 230, 0.38);*/
+  /*border-left: 24px solid rgba(173, 216, 230, 0.38);*/
+  /*height: fit-content;*/
+}
+
+.font{
+  background-color: rgba(173, 216, 230, 0.38);
+  /*width: fit-content;*/
+}
+
+.left{
+  width: 50%;
+  display: inline-block;
+  float: left;
+}
+
+.right{
+  width: 50%;
+  display: inline-block;
+  float: right;
 }
 
 p {
@@ -32,53 +60,28 @@ p {
   margin-left: 30px;
 }
 
-.text_1{
-  margin:0 0 0 -30px;
-  width: 90%;
-}
-
 .text_2{
   margin: 0 0 0 30px;
   width: 90%;
 }
 
-
-.text-font{
-  margin: 0 0 0 30px;
-  width: 100%;
-}
-
-.Div_1{
-  /*margin-left: 30px;*/
-  width: 90%;
-  padding: 20px 0 0 0;
-  line-height: 1.6;
-}
-
 .Div_2{
-  margin:0 0 0 30px;
+  margin:-1px 0 0 30px;
   width: 90%;
-  line-height: 1.5;
-}
-
-.Div_3{
-  margin:0 0 0 30px;
-  width: 90%;
-  line-height: 1.66;
-  padding: 20px 0 0 0;
+  line-height: 1.6;
 }
 
 .Div_4 {
   width: 90%;
-  line-height: 1.6;
+  line-height: 1.5;
   margin-left: 30px;
   margin-top: 25px;
 }
 
 .Div_5{
-  margin:0 0 0 30px;
+  margin: 8px 0 0 30px;
   width: 90%;
-  line-height: 1.57;
+  line-height: 1.5;
   padding: 20px 0 0 0;
 }
 
@@ -89,16 +92,20 @@ p {
 }
 
 select{
-  width: 100%;
+  width: 99%;
   background-color: rgba(242, 242, 242, 0.27);
   border: initial;
 }
 
+input{
+  width: 95%;
+}
 
 .button-grey{
-  width: 25px;
+  width: 23px;
   height: 20px;
   background-color: rgba(176, 176, 176, 0.27);
+  /*margin: 0 5px 0 -24px;*/
 }
 
 .button-div{

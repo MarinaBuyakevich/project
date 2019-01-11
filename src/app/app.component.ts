@@ -7,6 +7,10 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
+  Appearance = true;
+  Behavior = true;
+  Columns = true;
+  Columns_Color = true;
   button_1 = false;
   button_2 = false;
   button_3 = false;
